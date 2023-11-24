@@ -157,7 +157,17 @@ type Event struct {
 	IPAddress      string `json:"ipAddress"`
 	Details        string `json:"details"`
 	Attributes     struct {
-		SourceName string `json:"sourceName"`
+		CloudAppName       string `json:"cloudAppName"`
+		ProvisioningResult string `json:"provisioningResult"`
+		AppId              string `json:"appId"`
+		AccountUuid        string `json:"accountUuid"`
+		Operation          string `json:"operation"`
+		SourceId           string `json:"sourceId"`
+		SourceName         string `json:"sourceName"`
+		AccountName        string `json:"accountName"`
+		Interface          string `json:"interface"`
+		AttributeName      string `json:"attributeName"`
+		AttributeValue     string `json:"attributeValue"`
 	} `json:"attributes"`
 	Objects       []string `json:"objects"`
 	Operation     string   `json:"operation"`
